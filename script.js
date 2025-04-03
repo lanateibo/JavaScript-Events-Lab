@@ -27,3 +27,15 @@ myForm.addEventListener('submit', (event) => {
     event.preventDefault(); 
     formMessage.textContent = "Form has been submitted successfully!";
 });
+
+
+const focusInput = document.getElementById('focusInput');
+const focusMessage = document.getElementById('focusMessage');
+
+focusInput.addEventListener('focus', () => {
+    focusMessage.textContent = "Input is focused!";
+});
+
+focusInput.addEventListener('blur', () => {
+    focusMessage.textContent = "Input has lost focus.";
+});
